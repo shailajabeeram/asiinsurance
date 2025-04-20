@@ -13,7 +13,7 @@ pipeline {
         stage("Code Clone") {
             steps {
                 checkout scmGit(
-                    branches: [[name: '*/main']], // or master if your repo uses that
+                    branches: [[name: '*/master']], // or master if your repo uses that
                     extensions: [],
                     userRemoteConfigs: [[url: 'https://github.com/shailajabeeram/asiinsurance.git']]
                 )
